@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle periodic",
+        "command": "periodic:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Periodic",
+          "submenu": [
+            {
+              "label": "Open Periodic",
+              "command": "periodic:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

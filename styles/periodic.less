@@ -1,0 +1,99 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.periodic {
+  background-color: @app-background-color;
+  padding: 10px;
+  color: @text-color;
+
+  .selected {
+    color: @text-color-selected;
+    background-color: @background-color-highlight;
+  }
+
+  .periodic-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17px;
+    > h2 {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      position: relative;
+    }
+  }
+  .periodic-tab {
+    height: 45%;
+    border: 1px solid @base-border-color;
+    padding: 0.5%;
+    :first-of-type {
+      border-bottom: none;
+    }
+  }
+
+  .structure { height: 30%; }
+  .browser { height: 70%; }
+
+  ul.tables-list {
+    height: 100%;
+    overflow: scroll;
+    width: 15%;
+    list-style: none;
+    float: left;
+    margin: 0.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    > li:hover {
+      background-color: @background-color-highlight;
+      cursor: pointer;
+    }
+    > li {
+      padding-top: 1px;
+      padding-bottom: 1px;
+    }
+  }
+
+  table {
+    th {
+      background-color: @base-background-color;
+      text-align: center;
+      font-weight: bold;
+    }
+    td, th {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-left: 3px;
+      padding-right: 3px;
+      border: 1px @base-border-color solid;
+      cursor: pointer;
+    }
+    td:hover, th:hover {
+      background-color: @background-color-highlight;
+    }
+    width: 100%;
+  }
+  div.periodic-browser-options {
+    width: 100%;
+  }
+  div.table-browser {
+    height: calc(~"100% - 22px");
+    width: 100%;
+    margin-top: 10px;
+  }
+  div.table-structure { width: 83%; }
+  div.table-structure, div.table-browser {
+    max-height: 100%;
+    overflow: scroll;
+    float: left;
+  }
+
+  select > option {
+    background-color: @base-background-color;
+  }
+}
