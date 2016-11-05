@@ -1,9 +1,13 @@
 {
   "name": "periodic",
   "main": "./lib/main",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.1.0",
+  "description": "An atom package to browse slqite files.",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/electron-rebuild -f -w sqlite3"
+  },
   "keywords": [],
+  "author": "Pangoraw",
   "repository": "https://github.com/pangoraw/periodic",
   "license": "MIT",
   "engines": {

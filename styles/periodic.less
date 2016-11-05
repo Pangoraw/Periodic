@@ -8,7 +8,9 @@
   background-color: @app-background-color;
   padding: 10px;
   color: @text-color;
-
+  .error {
+    color: @text-color-error;
+  }
   .selected {
     color: @text-color-selected;
     background-color: @background-color-highlight;
@@ -80,6 +82,9 @@
   }
   div.periodic-browser-options {
     width: 100%;
+    button {
+      margin-left: 10px;
+    }
   }
   div.table-browser {
     height: calc(~"100% - 22px");
@@ -91,9 +96,5 @@
     max-height: 100%;
     overflow: scroll;
     float: left;
-  }
-
-  select > option {
-    background-color: @base-background-color;
   }
 }
