@@ -1,0 +1,7 @@
+[ignore]
+.*/node_modules/config-chain/test/broken.json
+.*/node_modules/npm/node_modules/config-chain/test/broken.json
+.*/node_modules/npm/test/fixtures/config/package.json
+
+[lib]
+.*/node_modules/fbjs/lib
