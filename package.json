@@ -1,7 +1,7 @@
 {
   "name": "periodic",
   "main": "./lib/main",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "An atom package to browse sqlite files.",
   "scripts": {
     "postinstall": "./node_modules/.bin/electron-rebuild -f -w sqlite3"
